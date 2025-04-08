@@ -19,8 +19,8 @@ const CONFIG = {
     },
   },
   batch: {
-    start: parseInt(process.env.BATCH_START, 10) || 2000,
-    size: parseInt(process.env.BATCH_SIZE, 10) || 10000,
+    start: parseInt(process.env.BATCH_START, 10) || 0,
+    size: parseInt(process.env.BATCH_SIZE, 10) || 100,
   },
   processing: {
     delayMs: parseInt(process.env.PROCESSING_DELAY_MS, 10) || 1000,
